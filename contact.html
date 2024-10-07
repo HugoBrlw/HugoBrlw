@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Hugo Barlow</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Hugo Barlow</a> <!-- Link back to the home page -->
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="https://www.hyperiondev.com/portfolio/216098/">Education</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    
+    <main class="contact-page">
+        <h1>Contact Me</h1>
+        <form action="submit_form.php" method="post"> <!-- Change action based on your form processing -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required aria-label="Your Name">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required aria-label="Your Email">
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your Message" required aria-label="Your Message"></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Hugo Barlow. All rights reserved.</p>
+    </footer>
+</body>
+</html>

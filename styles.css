@@ -280,3 +280,59 @@ span{
       margin-top: 4rem; /* Add margin above the image */
   }
 }
+
+footer {
+    text-align: right;
+}
+
+
+/* CONTACT PAGE */
+/* Centering the main content for the contact page */
+.contact-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers items horizontally */
+    justify-content: center; /* Centers items vertically */
+    min-height: 100vh; /* Ensures it takes at least the full height of the viewport */
+    padding: 5rem 9%; /* Same padding as other sections for consistency */
+}
+
+.contact-page h1 {
+    font-size: 4rem; /* Adjust font size for the heading */
+    margin-bottom: 2rem; /* Space below the heading */
+}
+
+.contact-page form {
+    width: 100%; /* Ensure the form takes the full width */
+    max-width: 600px; /* Optional: limit the maximum width of the form */
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+    gap: 15px; /* Space between form elements */
+}
+
+.contact-page label {
+    font-size: 1.6rem; /* Label font size */
+}
+
+.contact-page input,
+.contact-page textarea {
+    padding: 1rem; /* Add padding for form inputs */
+    font-size: 1.6rem; /* Input font size */
+    border-radius: 4px; /* Rounded corners */
+    border: 1px solid #1a819b; /* Border color matching your theme */
+}
+
+.contact-page button {
+    padding: 1rem; /* Button padding */
+    font-size: 1.6rem; /* Button font size */
+    background-color: #1a819b; /* Button background color */
+    color: black; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.contact-page button:hover {
+    background-color: #1a819b; /* Change on hover */
+    color: white; /* Change text color on hover */
+}
