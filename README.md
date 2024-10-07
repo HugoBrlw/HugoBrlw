@@ -4,7 +4,7 @@ Hello, I'm Hugo, a dedicated software engineer with a strong foundation in creat
 
 ## Portfolio
 
-You can view my complete portfolio at: [My Portfolio](https://HugoBrlw.github.io)
+You can view my complete portfolio at: [My Portfolio](https://HugoBrlw.github.io/HugoBrlw)
 
 ## About Me
 
