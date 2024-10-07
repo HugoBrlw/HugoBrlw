@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap'); 
+/* Imports the 'Poppins' font with various font weights from Google Fonts */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+/* Resets default margins and padding, sets box-sizing to 'border-box', and applies the 'Poppins' font to all elements */
+
+html{
+    font-size: 62.5%;
+}
+/* Sets the base font size of the HTML document to 62.5% (10px if the browser default is 16px), making it easier to work with rem units */
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+}
+/* Sets the body to full width and height of the viewport, hides horizontal overflow, and applies a black background with white text */
+
+header{
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+/* Creates a fixed header at the top with padding, a shadow effect, and aligns items using flexbox */
+
+.logo{
+    font-size: 3rem;
+    color: #1a819b;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+/* Styles the logo with a large red font, bold weight, and adds a hover effect with a transition */
+
+.logo:hover{
+    transform: scale(1.1);
+}
+/* Increases the size of the logo slightly when hovered */
+
+nav a{
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+/* Styles the navigation links with white text, spacing, and a border-bottom that becomes visible on hover */
+
+nav a:hover,
+nav a.active{
+    color: #1a819b;
+    border-bottom: 3px solid #1a819b;
+}
+/* Changes the navigation link's text and bottom border to red when hovered or active */
+
+@media(max-width:995px){
+    nav{
+        position: absolute;
+        display: none;
+        top: 0;
+        right: 0;
+        width: 40%;
+        border-left: 3px solid #1a819b;
+        border-bottom: 3px solid #1a819b;
+        border-bottom-left-radius: 2rem;
+        padding: 1rem solid;
+        background-color: #161616;
+        border-top: 0.1rem solid rgba(0,0,0,0.1);
+    }
+    /* On screens smaller than 995px, the nav becomes hidden and repositions with a red border. */
+
+    nav.active{
+        display: block;
+    }
+    /* Shows the nav when it has the 'active' class */
+
+    nav a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+    /* Changes navigation link layout and font size for small screens */
+
+    nav a:hover,
+    nav a.active{
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-bottom: 0.5rem solid #1a819b;
+    }
+    /* Adds padding and rounded corners to links when hovered or active in mobile view */
+}
+
+section{
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+}
+/* Ensures each section has a minimum height of 100% of the viewport and is padded on all sides */
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color: black;
+}
+/* Creates a flex container for the home section, centering items with space between them and a black background */
+
+.home .home-content h1{
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+/* Styles the main heading in the home section with a large font size, bold weight, and 1.3 line height */
+
+span{
+    color: #1a819b;
+}
+/* Styles 'span' elements with red text */
+
+.home-content h2{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+/* Styles secondary heading in the home section with a large font size and bold weight */
+
+.home-content p{
+    font-size: 1.6rem;
+}
+/* Styles the paragraph text inside the home section with a readable font size */
+
+.home-img{
+    border-radius: 50%;
+    border:-#1a819b;
+}
+/* Ensures the container for the image in the home section has rounded borders (circular) */
+
+.home-img img{
+    position: relative;
+    width: 32vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px solid #1a819b;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+/* Styles the image with a circular shape, a red shadow, and a pointer cursor on hover */
+
+.home-img img:hover{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+/* On hover, slightly adjusts the font size (if there is any text in the image) */
+
+.social-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 0.2rem solid #1a819b;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+    color: #1a819b;
+}
+/* Styles social media icons with a circular border, red colour, and spacing */
+
+.social-icons a:hover{
+    color: black;
+    transform: scale(1.3) translateY(-5px);
+    background-color: #1a819b;
+    box-shadow: 0  0 25px #1a819b;
+}
+/* Changes icon colour to black, enlarges and shifts it slightly when hovered, and adds a red background */
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: black;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: #1a819b;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    border: 2px solid #1a819b;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+/* Styles buttons with padding, circular borders, and a red border. Text is bold, red, and slightly spaced out */
+
+.btn:hover{
+    transform: scale3d(1.03);
+    background-color: #1a819b;
+    color: black;
+    box-shadow: 0 0 25px #1a819b;
+}
+/* Slightly enlarges button, changes background to red, and text to black on hover */
+
+.typing-text{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+/* Styles the typing effect text with a medium-large font and bold weight */
+
+.typing-text span{
+    position: relative;
+}
+/* Positions the span element inside the typing effect text relatively */
+
+.typing-text span::before {
+    content: "";
+    color: #1a819b;
+}
+
+.typing-text span::after {
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid black;
+    right: -8;
+    animation: cursor 0.6s infinite;
+}
+
+/* Adds a cursor effect after the span with a blinking animation */
+
+@keyframes cursor{
+    to{
+        border-left: 3px solid #1a819b;
+    }
+}
+/* Animates the cursor with a red blinking effect */
+
+@media (max-width: 1000px){
+  .home{
+      gap: 4rem; /* Reduce the gap between elements when the screen width is 1000px or less */
+  }
+}
+
+@media(max-width:995px){ /* Responsive styles for screens smaller than 995px */
+  .home{
+      flex-direction: column; /* Stack the content vertically */
+      margin: 5rem 4rem; /* Add margin to the home section */
+  }
+
+  .home .home-content h2{
+      font-size: 2.5rem; /* Smaller font size for the subheading */
+  }
+
+  .home-content h1{
+      font-size: 5rem; /* Smaller font size for the main heading */
+  }
+
+  .home-img img{
+      width: 70vw; /* Image takes up 70% of the viewport width */
+      margin-top: 4rem; /* Add margin above the image */
+  }
+}

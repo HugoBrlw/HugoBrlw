@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" /> <!-- Link to external CSS file -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper scaling on mobile devices -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> <!-- Link to Font Awesome for social media icons -->
+    <title>Portfolio</title> <!-- Webpage title -->
+  </head>
+
+  <body>
+    <!-- Header section with logo and navigation -->
+    <header>
+        <a href="#" class="logo">Hugo Barlow</a> <!-- Logo link to home, with class for styling -->
+
+        <nav>
+            <!-- Navigation links, "Home" marked as active -->
+            <a href="#" class="active"> Home</a>
+            <a href="#" >Services</a>
+            <a href="#" >Skills</a>
+            <a href="#" >Education</a>
+            <a href="#" >Experience</a>
+            <a href="#" >Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home section that includes image and introductory text -->
+    <section class="home">
+        <div class="home-img">
+            <img src="main.jpg" alt="Awesome picture of me"> <!-- User's image, ensure correct file path and extension -->
+        </div>
+
+        <div class="home-content">
+            <h1>Hi, It's <span>Hugo</span></h1> <!-- Main heading introducing user with styled name -->
+            
+            <h2 class="typing-text">I'm a <span id="dynamicText"></span></h2> <!-- Typing effect for dynamic professions, managed by CSS -->
+            <h3> About me</h3>
+            <p>Motivated career-changer with a successful track record as a senior data
+              analyst, transitioning to a role as a Software Developer. Recently
+              completed a software engineering bootcamp, gaining proficiency in
+              various coding languages and technologies. Excited to apply analyst
+              expertise and problem-solving skills to contribute effectively to dynamic
+              software development projects.</p> <!-- Placeholder text, describing user -->
+            
+            <!-- Social media icons section -->
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a> <!-- LinkedIn icon -->
+                <a href="#"><i class="fa-brands fa-github"></i></a> <!-- GitHub icon -->
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a> <!-- Twitter (X) icon -->
+                <a href="#"><i class="fa-brands fa-instagram"></i></a> <!-- Instagram icon -->
+            </div>
+
+            <!-- Call-to-action button for hiring -->
+            <a href="#" class="btn">Hire me</a>
+        </div>
+    </section>
+  <script src="script.js"></script>
+  </body>
+</html>
