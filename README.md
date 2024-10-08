@@ -36,10 +36,6 @@ Here are some disclosable projects I have worked on:
 
 I welcome opportunities for collaboration and professional networking. Feel free to reach out via [LinkedIn](https://www.linkedin.com/in/hugo-barlow-a102151b0/) or [Email](mailto:hugobrlw@gmail.com).
 
-## License
-
-This project is licensed under the MIT License. Please refer to the [LICENSE](LICENSE) file for more details.
-
 ---
 
 Thank you for visiting my portfolio. I look forward to connecting and exploring potential collaborations!
