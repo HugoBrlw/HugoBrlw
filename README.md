@@ -22,7 +22,7 @@ Here are some disclosable projects I have worked on:
 1. **[Basic Fitness App](https://github.com/HugoBrlw/Basic-Fitness-App)**  
    A simple Python-based fitness app storing exercises with reps and sets 3 databases are used: 1 for the exercises, 1 for routines, 1 for goals.
 
-2. **[Project Name 2](https://github.com/HugoBrlw/spell_checker)**  
+2. **[Web-based spell checker](https://github.com/HugoBrlw/spell_checker)**  
    A web-based spell checker currently in design.
 
 3. **[Task Manager](https://github.com/HugoBrlw/Task-Manager)**  
